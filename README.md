@@ -6,9 +6,11 @@ A simple name generator made in python, where you can generate a dragon name or 
 
 - Clone or download this repo and navigate to this folder
 - Run `pipenv shell` to enter the virtual environment
-- Run `pipenv install` to install dependencies
+- Run `pipenv install` within the virtual environment to install dependencies
 
 ## Usage
+
+NB: Currently the only dependencies are for testing so just `python app.py` will also run the app without needing pipenv / the virtual environment
 
 Within the virual environment:
 
@@ -24,5 +26,3 @@ Within the virual environment:
 - Run the testing suite with `pipenv run test`
 - Run test coverage with `pipenv run coverage`
 - Exit the virtual environment with `exit`
-
-NB: Currently the only dependencies are for testing so just `python app.py` will also run the app without needing the virtual environment
