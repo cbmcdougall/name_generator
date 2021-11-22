@@ -1,4 +1,4 @@
-import name_generator as gen
+import name_generators as gen
 import os
 import pdb
 
@@ -46,7 +46,7 @@ def run():
             result = handle_option(user_data, option)
             clear_screen()
             print(f"Your {option} name is {result}")
-            
+
     except Exception:
         print("\nTerribly sorry, there's been an error!\n")
     finally:
