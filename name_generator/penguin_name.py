@@ -24,6 +24,7 @@ last_names = [
 ]
 
 def get_penguin_name(name, birth_month):
+    """ Takes a name and birthmonth and generates a penguin name from the lists of defined names """
     try:
         first = first_names[alphabet.find(name[0])]
         last = last_names[months.index(birth_month)]
