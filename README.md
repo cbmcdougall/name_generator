@@ -10,7 +10,7 @@ A simple name generator made in python, where you can generate a dragon name or 
 
 - Start the program with `python app.py`
 - Case/capitalisation on user inputs doesn't matter
-- It will then ask you to input a name
+- It will ask you to input a name
 - It will then ask for a birth month
   - This must be the full month name e.g. January
 - Then it will ask for what name to generate
