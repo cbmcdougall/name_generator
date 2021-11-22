@@ -1,2 +1,2 @@
-from . import dragon_name
-from . import penguin_name
+from . import dragon_name as dragon
+from . import penguin_name as penguin

@@ -19,9 +19,9 @@ def get_option():
 def handle_option(user_data, option):
     name, month = user_data
     if (option == "dragon"):
-        result = gen.dragon_name.get_dragon_name(name, month)
+        result = gen.dragon.get_dragon_name(name, month)
     elif (option == "penguin"):
-        result = gen.penguin_name.get_penguin_name(name, month)
+        result = gen.penguin.get_penguin_name(name, month)
     else:
         result = "none"
         
