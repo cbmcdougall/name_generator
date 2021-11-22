@@ -24,5 +24,10 @@ last_names = [
 ]
 
 def get_penguin_name(name, birth_month):
-    penguin_name = first_names[alphabet.find(name[0])] + " " + last_names[months.index(birth_month)]
-    return penguin_name
+    try:
+        first = first_names[alphabet.find(name[0])]
+        last = last_names[months.index(birth_month)]
+        penguin_name = first + " " + last
+        return penguin_name
+    except:
+        print("\nWhoops! Error in generating penguin name\n")
