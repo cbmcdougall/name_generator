@@ -8,8 +8,10 @@ def clear_screen():
 def get_user_data():
     name = input("\nWhat is your name?\n").lower()
     if (name == "exit"): return name
+
     month = input("\nWhat is your birth month? (please type full name e.g. January)\n").lower()
     if (month == "exit"): return month
+
     return (name, month)
 
 def get_option():
@@ -18,6 +20,7 @@ def get_option():
 
 def handle_option(user_data, option):
     name, month = user_data
+
     if (option == "dragon"):
         result = gen.dragon.get_dragon_name(name, month)
     elif (option == "penguin"):
@@ -31,6 +34,7 @@ def handle_option(user_data, option):
 def run():
     clear_screen()
     print("\nWelcome to our name generator, type 'exit' at any point to stop!\n")
+
     try:
         while(True):
             user_data = get_user_data()
@@ -42,6 +46,7 @@ def run():
             result = handle_option(user_data, option)
             clear_screen()
             print(f"Your {option} name is {result}")
+            
     except Exception:
         print("\nTerribly sorry, there's been an error!\n")
     finally:
