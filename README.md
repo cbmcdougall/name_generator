@@ -24,3 +24,5 @@ Within the virual environment:
 - Run the testing suite with `pipenv run test`
 - Run test coverage with `pipenv run coverage`
 - Exit the virtual environment with `exit`
+
+NB: Currently the only dependencies are for testing so just `python app.py` will also run the app without needing the virtual environment
